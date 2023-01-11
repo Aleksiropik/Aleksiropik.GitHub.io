@@ -2,8 +2,14 @@
     <body>
     ПРИВЕТ МИР
 <div id="qwerty"></div>
+<canvas id="qwertyu" width="300" height="300"></canvas>
 <script>
-    document.getElementById("qwerty").innerHTML="hello java script"
+    document.getElementById("qwerty").innerHTML="hello java script";
+    const qwertyui=document.getElementById("qwertyu");
+    const ctx=qwertyui.getContext("2d");
+    ctx.lineWidth=10;
+    ctx.strokeRect(75,140,150,110);
+    ctx.fillRect(130,190,40,60);
     </script>
     </body>
 </html>
