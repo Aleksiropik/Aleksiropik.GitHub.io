@@ -1,8 +1,9 @@
 <html>
-    <body>
+<body>
     ПРИВЕТ МИР
-<div id="qwerty"></div>
-<canvas id="qwertyu" width="500" height="500" style="border: 1px sol;"></canvas>
+    <div id="qwerty"></div>
+    <canvas id="qwertyu" width="500" height="500" style="border: 1px sol;"></canvas>
+
 <script>
     document.getElementById("qwerty").innerHTML="hello java script";
     const qwertyui=document.getElementById("qwertyu");
@@ -10,12 +11,12 @@
     ctx.lineWidth=10;
     ctx.fillRect(130,190,40,60);
 
-ctx.beginPath();
-ctx.moveTo(50,140);
-ctx.lineTo(150,60);
-ctx.lineTo(250,140);
-ctx.closePath();
-ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(50,140);
+    ctx.lineTo(150,60);
+    ctx.lineTo(250,140);
+    ctx.closePath();
+    ctx.stroke();
 
 function drawLine(c,x1,y1,x2,y2){
     c.beginPath();
@@ -27,8 +28,9 @@ function drawLine(c,x1,y1,x2,y2){
     c.closePath();
 }
 
-drawLine(ctx, 10, 20, 110, 120);
+    drawLine(ctx, 10, 20, 110, 120);
 
-    </script>
-    </body>
+</script>
+
+</body>
 </html>
