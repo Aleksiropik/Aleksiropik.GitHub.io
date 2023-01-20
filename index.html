@@ -2,13 +2,13 @@
 <body>
     ПРИВЕТ МИР
     <div id="qwerty"></div>
-    <canvas id="qwertyu" width="500" height="500" style="border: 1px sol;"></canvas>
+    <canvas id="qwertyu" width="500" height="500" style="border: 1px solid;"></canvas>
 
 <script>
     document.getElementById("qwerty").innerHTML="hello java script";
     const qwertyui=document.getElementById("qwertyu");
     const ctx=qwertyui.getContext("2d");
-    
+
     ctx.lineWidth=10;
     ctx.fillRect(130,190,40,60);
     ctx.strokeRect(75, 140, 150, 110);
@@ -16,8 +16,8 @@
     ctx.moveTo(50,140);
     ctx.lineTo(150,60);
     ctx.lineTo(250,140);
-    ctx.stroke();
     ctx.closePath();
+    ctx.stroke();
 
 function drawLine(c,x1,y1,x2,y2){
     c.beginPath();
