@@ -15,13 +15,13 @@
     ctx.moveTo(50,140);
     ctx.lineTo(150,60);
     ctx.lineTo(250,140);
-    ctx.closePath();
     ctx.stroke();
+    ctx.closePath();
 
 function drawLine(c,x1,y1,x2,y2){
     c.beginPath();
     c.strokeStyle='black';
-    c.lineWidth=10;
+    c.lineWidth=1;
     c.moveTo(x1,y1);
     c.lineTo(x2,y2);
     c.stroke();
