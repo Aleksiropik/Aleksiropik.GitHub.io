@@ -18,11 +18,12 @@
     ctx.lineTo(250,140);
     ctx.closePath();
     ctx.stroke();
+let x=0;
+let y=0;
 
 qwertyu.addEventListener("mousemove",e=>{
-    drawLine(ctx,e.offsetX,e.offsetY,e.offsetX,e.offsetY);
-}
-);
+    drawLine(ctx,x,y,e.offsetX,e.offsetY);
+});
 function drawLine(c,x1,y1,x2,y2){
     c.beginPath();
     c.strokeStyle='red';
