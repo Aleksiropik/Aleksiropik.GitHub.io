@@ -23,6 +23,8 @@ let y=0;
 
 qwertyu.addEventListener("mousemove",e=>{
     drawLine(ctx,x,y,e.offsetX,e.offsetY);
+    x=e.offsetX;
+    Y=e.offsetY;
 });
 function drawLine(c,x1,y1,x2,y2){
     c.beginPath();
