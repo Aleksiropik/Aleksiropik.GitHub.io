@@ -28,7 +28,11 @@ save.addEventListener("click",e=>{
     alert("прив");
     const can=document.getElementById('qwertyu');
     const adres=can.toDataURL();
-    window.location.href=adres;    
+    const anc=document.createElement("a");
+    anc.href=adres;
+    anc.download='asd';
+    anc.click();
+    anc.remove();
 })
 
 qwertyu.addEventListener("mousemove",e=>{
