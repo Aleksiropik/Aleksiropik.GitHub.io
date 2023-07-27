@@ -26,7 +26,8 @@ let y=0;
 
 save.addEventListener("click",e=>{
     alert("прив");
-    const adres=qwertyu.toDataURL();
+    const can=document.getElementById('qwertyu');
+    const adres=can.toDataURL();
     window.location.href=adres;    
 })
 
