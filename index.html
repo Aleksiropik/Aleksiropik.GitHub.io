@@ -23,9 +23,11 @@
     ctx.stroke();
 let x=0;
 let y=0;
+let draw=false;
+
 
 save.addEventListener("click",e=>{
-    alert("прив");
+    alert("привет");
     const can=document.getElementById('qwertyu');
     const adres=can.toDataURL();
     const anc=document.createElement("a");
@@ -36,21 +38,22 @@ save.addEventListener("click",e=>{
 })
 
 qwertyu.addEventListener("mousemove",e=>{
+if(draw==true){
     drawLine(ctx,x,y,e.offsetX,e.offsetY);
     x=e.offsetX;
     y=e.offsetY;
+}
 });
-function drawLine(c,x1,y1,x2,y2){
-    c.beginPath();
-    c.strokeStyle='red';
-    c.lineWidth=1;
-    c.moveTo(x1,y1);
-    c.lineTo(x2,y2);
-    c.stroke();
-    c.closePath();
-};
 
-    drawLine(ctx, 10, 20, 110, 120);
+qwertyu.addEventListener("mousedown",e=>{
+    draw=true;
+});
+
+qwertyu.addEventListener("mouseup",e=>{
+    draw=false;
+});
+
+function drawLine(c,x1,y1,x2,y2){
 
 drawLine(ctx,0,250,500,500);
 
