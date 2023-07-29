@@ -8,6 +8,9 @@
     <canvas id="qwertyu" width="500" height="500" style="border: 1px solid;"></canvas>
 
 <script>
+
+
+function drawLine(c,x1,y1,x2,y2){
     document.getElementById("qwerty").innerHTML="hello java script";
     const qwertyui=document.getElementById("qwertyu");
     const ctx=qwertyui.getContext("2d");
@@ -21,6 +24,8 @@
     ctx.lineTo(250,140);
     ctx.closePath();
     ctx.stroke();
+}
+
 let x=0;
 let y=0;
 let draw=false;
@@ -53,7 +58,6 @@ qwertyu.addEventListener("mouseup",e=>{
     draw=false;
 });
 
-function drawLine(c,x1,y1,x2,y2){
 
 drawLine(ctx,0,250,500,500);
 
