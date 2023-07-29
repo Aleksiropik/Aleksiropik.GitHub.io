@@ -33,7 +33,9 @@ let draw=false;
 
 
 fileinput.addEventListener("change",e=>{
-alert("aha");
+const dwdw=new Image();
+dwdw.src=URL .createObjectURL(fileinput.files[0]);
+ctx.drawImage(dwdw,0,0);
 });
 
 
