@@ -3,7 +3,7 @@
     ПРИВЕТ МИР
     <div id="qwerty"></div>
 
-    <input type="color">
+    <input id="rgb" type="color">
 
 <input type="file" id="fileinput">
 
@@ -33,6 +33,10 @@ let x=0;
 let y=0;
 let draw=false;
 
+rgb.addEventListener("change", e=>{
+    ctx.strokeStyle=e.target.value;
+
+}, false);
 
 fileinput.addEventListener("change",e=>{
 const dwdw=new Image();
@@ -77,7 +81,6 @@ qwertyu.addEventListener("mouseup",e=>{
 
 function drawLine(c,x1,y1,x2,y2){
     c.beginPath();
-    c.strokeStyle='red';
     c.lineWidth=1;
     c.moveTo(x1,y1);
     c.lineTo(x2,y2);
