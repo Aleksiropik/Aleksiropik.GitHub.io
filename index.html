@@ -34,7 +34,8 @@ let draw=false;
 
 fileinput.addEventListener("change",e=>{
 const dwdw=new Image();
-dwdw.src=URL .createObjectURL(fileinput.files[0]);
+dwdw.src=URL.createObjectURL(fileinput.files[0]);
+alert(dwdw.src);
 ctx.drawImage(dwdw,0,0);
 });
 
