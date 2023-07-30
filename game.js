@@ -11,3 +11,5 @@ function drawPaddle() {
     ctx.fill();
     ctx.closePath();
   }
+
+  drawPaddle();
