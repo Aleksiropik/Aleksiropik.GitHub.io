@@ -14,6 +14,10 @@ function drawPaddle() {
 
   drawPaddle();
 
+  var dx = 2;
+  var dy = -2;
+  
+
   var x = canvas.width / 2;
   var y = canvas.height - 30;
 
